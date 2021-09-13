@@ -1,0 +1,58 @@
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .container{
+        display: flexbox;
+    }
+    .header1HomePage{
+        font-size: large;
+        margin-top: 25px;
+    }
+    .header1maincontent{
+        font-size: larger;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container{
+        display: flexbox;
+    }
+    .header1HomePage{
+        font-size: large;
+        margin-top: 25px;
+    }
+    .header1maincontent{
+        font-size: larger;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container{
+        display: flexbox;
+    }
+    .header1HomePage{
+        font-size: large;
+        margin-top: 25px;
+    }
+    .header1maincontent{
+        font-size: larger;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */ 
+@media (min-width: 1200px) {
+    .container{
+        display: flexbox;
+    }
+    .header1HomePage{
+        font-size: large;
+        margin-top: 25px;
+    }
+    .header1maincontent{
+        font-size: larger;
+    }
+}
