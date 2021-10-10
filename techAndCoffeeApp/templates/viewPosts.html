@@ -42,14 +42,14 @@
         {% for Comment in Post.postcomment.all %}
         
         <div>
-        <p>{{Comment.user.first_name}} {{Comment.user.last_name}}: {{Comment.comment}} <button> <a href="/homePage/viewPosts/{{Comment.user.id}}/edit">Edit your Comment!</a></button></p>
+        <p>{{Comment.user.first_name}} {{Comment.user.last_name}}: {{Comment.comment}} <a class="btn btn-primary" href="/homePage/viewPosts/{{Comment.user.id}}/edit" role="button">Edit Comment</a></p>
         </div>
         {% endfor %}
         <form action="/homePage/viewPosts/createcomment"  method="POST">
         {% csrf_token %}
         <textarea name="comment" cols="17" rows="1"></textarea>
         <input type="hidden" name="Post_id" value="{{Post.id}}">
-        <button type="submit">Submit Comment</button>
+        <input class="btn btn-primary" type="submit" value="Submit Comment">
         
         <img src="{{ Post.image.url }}" class="img-responsive" style="width: 25%; margin-right: 10px; margin:10px" />
             
